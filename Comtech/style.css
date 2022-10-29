@@ -1,0 +1,662 @@
+* {
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+.section {
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  padding: 15px 20px;
+  flex-basis: 230px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: 0.5s;
+}
+
+svg {
+  width: 50px;
+  height: 50px;
+}
+h2 {
+  font-size: 1.25em;
+}
+p {
+  font-size: 14px;
+}
+
+/*--------------------------- header --------------------*/
+.header {
+  width: 100%;
+  height: 85vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(4, 9, 30, 0.7)),
+    url(images/closeup-electronic-circuit-board-with-cpu-microchip-electronic-components-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav {
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: auto;
+  padding: 1% 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  width: 94%;
+}
+nav h1 a {
+  text-decoration: none;
+  margin: 0;
+  color: white;
+  font-size: 25px;
+}
+nav h1 span {
+  color: hsl(218, 80%, 50%);
+}
+nav .nav-links {
+  display: flex;
+  margin: 0;
+  flex: 1;
+  justify-content: flex-end;
+}
+.nav-links ul li {
+  margin-right: 20px;
+  display: inline-block;
+  list-style: none;
+}
+.nav-links ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+.nav-links ul li a:hover {
+  color: hsl(218, 80%, 50%);
+}
+nav svg {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  padding-left: 10px;
+  border-left: 1px solid rgb(255, 255, 255);
+  display: none;
+}
+
+/* --------------------- text box ------------------ */
+.text-box {
+  color: white;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h2 {
+  font-size: 30px;
+  font-weight: 300;
+}
+.text-box h1 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.text-box p {
+  color: hsl(0, 0%, 100%);
+  margin: 10px 0 40px;
+  font-size: 16px;
+}
+.hero-btns {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.hero-btn {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid hsl(218, 80%, 50%);
+  padding: 12px 32px;
+  font-size: 12px;
+  background: hsl(218, 80%, 50%);
+  position: relative;
+  transition: 1s;
+}
+.hero-btn:hover {
+  background-color: hsla(218, 80%, 50%, 0.7);
+  border: 1px solid hsla(218, 80%, 50%, 0.7);
+}
+.hero-btn-transparent {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid hsl(218, 80%, 50%);
+  padding: 12px 34px;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  transition: 1s;
+}
+.hero-btn-transparent:hover {
+  border: 1px solid hsl(218, 80%, 50%);
+  background-color: hsla(218, 80%, 50%, 0.05);
+}
+
+@media (max-width: 850px) {
+  .header {
+    height: 60vh;
+  }
+  nav {
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+  }
+  nav svg {
+    position: relative;
+    top: 2px;
+    text-align: right;
+    display: block;
+  }
+  nav .nav-links {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: absolute;
+    top: 68.5px;
+    left: -100%;
+    text-align: right;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.5s;
+  }
+  .nav-links ul {
+    text-align: left;
+    padding: 0 0 10px;
+  }
+  .nav-links ul li {
+    margin: 20px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  nav ul li a {
+    transition: 0.7s;
+  }
+  .nav-links ul li a:hover {
+    color: hsl(218, 80%, 50%);
+    margin-left: 3px;
+  }
+  .nav-links ul li svg {
+    float: right;
+  }
+  .text-box {
+    width: 80%;
+    top: 33%;
+  }
+  .text-box h2 {
+    font-size: 20px;
+    font-weight: 100;
+  }
+  .text-box h1 {
+    font-size: 35px;
+    font-weight: 400;
+  }
+  .text-box p {
+    font-size: 13px;
+  }
+  .hero-btn,
+  .hero-btn-transparent {
+    font-size: 12px;
+    padding: 8px 24px;
+  }
+}
+/* -------------------- about ----------------- */
+
+.about-container {
+  margin: -30px auto 20px;
+}
+.about-section {
+  text-align: center;
+}
+.about-section:hover {
+  background-color: hsl(218, 80%, 50%);
+  color: white;
+}
+
+.about-us {
+  flex-wrap: wrap;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px auto;
+  gap: 20px;
+}
+.about-us-image {
+  object-fit: contain;
+  border: 5px solid hsl(218, 80%, 50%);
+  height: 280px;
+  width: 403px;
+}
+.about-us-image img {
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+  height: 100%;
+  width: 100%;
+}
+.about-us-info {
+  width: 413px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.about-us-info h3 {
+  color: hsl(218, 80%, 50%);
+  font-size: 14px;
+  font-weight: 400;
+}
+.about-us-info h2 {
+  font-size: 35px;
+}
+.about-us-info p {
+  line-height: 1.3;
+  color: rgb(52, 52, 52);
+}
+.about-us-info ul {
+  line-height: 24px;
+  padding: 0 15px;
+}
+.about-us-info ul li {
+  color: rgb(52, 52, 52);
+}
+.about-us-info ul li::marker {
+  color: hsl(218, 80%, 50%);
+}
+.about-us-info a {
+  text-align: center;
+}
+@media (max-width: 1100px) {
+  .about-section {
+    width: 90%;
+  }
+  .about-us {
+    width: 90%;
+  }
+}
+@media (max-width: 1000px) {
+  .section {
+    flex-basis: 70%;
+  }
+  .about-us {
+    width: 70%;
+  }
+  .about-us-image {
+    width: 100%;
+    height: 100%;
+  }
+  .about-us-info {
+    width: 100%;
+  }
+}
+
+/* ------------------- services -------------------- */
+.services {
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(4, 9, 30, 0.7)),
+    url(images/closeup-electronic-circuit-board-with-cpu-microchip-electronic-components-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px;
+  padding: 60px 0 60px;
+  text-align: center;
+  border-radius: 0px;
+  box-shadow: 0;
+}
+.services h3 {
+  color: hsl(218, 80%, 50%);
+  font-size: 14px;
+  font-weight: 400;
+}
+.services h1 {
+  font-size: 45px;
+  font-weight: 400;
+  color: white;
+}
+.services-section {
+  text-align: center;
+}
+.services-section:hover {
+  border: 3px solid hsl(218, 80%, 50%);
+}
+
+/* -------------------- Team -------------------- */
+.team {
+  text-align: center;
+  margin: 60px 0;
+}
+.team h3 {
+  color: hsl(218, 80%, 50%);
+  font-size: 14px;
+  font-weight: 400;
+}
+.team h1 {
+  margin: 10px 0 30px;
+  font-size: 45px;
+  font-weight: 400;
+}
+.our-team {
+  margin: 20px auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.member {
+  padding: 5px;
+  border: 1px solid gray;
+  width: 180px;
+  transition: 0.5s;
+}
+.member a {
+  text-decoration: none;
+}
+.member img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.member h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.member-icons {
+  width: 100%;
+  margin: 10px 0 8px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.member-icons svg {
+  width: 20px;
+  height: 20px;
+}
+.btn {
+  border-radius: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid hsl(218, 80%, 50%);
+  padding: 12px 32px;
+  font-size: 12px;
+  background: hsl(218, 80%, 50%);
+  position: relative;
+  transition: 1s;
+}
+.btn:hover {
+  background-color: hsla(218, 80%, 50%, 0.7);
+  border: 1px solid hsla(218, 80%, 50%, 0.7);
+}
+
+@media (max-width: 1100px) {
+  .member {
+    width: 40%;
+  }
+}
+@media (max-width: 700px) {
+  .member {
+    width: 80%;
+  }
+}
+
+/* ------------------ review --------------- */
+.reviews {
+  text-align: center;
+  padding: 60px 0;
+  background-color: rgb(212, 212, 212);
+}
+.reviews h3 {
+  margin: 10px 0 30px;
+  font-size: 45px;
+  font-weight: 400;
+}
+.review-container {
+  margin: 20px auto;
+  width: 80vw;
+  max-width: 620px;
+}
+.review {
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+  text-align: center;
+}
+.review:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.img-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+#person-img {
+  width: 200px;
+  display: inline-block;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+#author {
+  margin-bottom: 0.25rem;
+}
+#info {
+  margin-bottom: 0.75rem;
+}
+.prev-btn,
+.next-btn {
+  color: hsl(205, 90%, 76%);
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.prev-btn:hover,
+.next-btn:hover {
+  color: hsl(218, 80%, 50%);
+}
+.random-btn {
+  margin-top: 0.5rem;
+  background: hsl(218, 80%, 50%);
+  color: hsl(205, 100%, 96%);
+  padding: 0.25rem 0.5rem;
+  text-transform: capitalize;
+  border-radius: 0.25rem;
+  transition: all 0.3s linear;
+  border-color: hsl(218, 80%, 50%);
+  cursor: pointer;
+}
+.random-btn:hover {
+  background: hsl(205, 100%, 96%);
+  color: hsl(218, 80%, 50%);
+}
+/* -------------------blogs ---------------------- */
+.blog {
+  text-align: center;
+  margin: 60px 0;
+}
+.blog h3 {
+  font-size: 14px;
+  color: hsl(218, 80%, 50%);
+  font-weight: 400;
+}
+.blog h1 {
+  margin: 10px 0 30px;
+  font-size: 45px;
+  font-weight: 400;
+}
+.blog-item {
+  padding: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  text-align: left;
+  transition: 0.5s;
+  border-bottom: 1px solid black;
+}
+.blog-item:hover {
+  background-color: rgb(212, 212, 212);
+}
+.blog-item img {
+  width: 100%;
+  height: 100%;
+}
+.blog-item-info {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.blog-item-info p {
+  color: rgb(52, 52, 52);
+}
+.blog-item-info h3 {
+  color: black;
+  font-weight: 700;
+}
+.blog-btn {
+  margin-top: 0.5rem;
+  background: hsl(218, 80%, 50%);
+  color: hsl(205, 100%, 96%);
+  padding: 12px 34px;
+  text-transform: capitalize;
+  border-radius: 0.25rem;
+  transition: all 0.3s linear;
+  border-color: hsl(218, 80%, 50%);
+  cursor: pointer;
+}
+.blog-btn:hover {
+  background: hsl(205, 100%, 96%);
+  color: hsl(218, 80%, 50%);
+}
+@media (max-width: 1000px) {
+  .blog-item {
+    width: 60%;
+  }
+}
+@media (max-width: 700px) {
+  .blog-item {
+    width: 80%;
+  }
+}
+
+/* ------------------- footer -------------------- */
+.footer {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(4, 9, 30, 0.6)),
+    url(images/closeup-electronic-circuit-board-with-cpu-microchip-electronic-components-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  color: white;
+  width: 250px;
+}
+.footer h1 {
+  margin: 10px 0;
+}
+.footer-summary h1 a {
+  text-decoration: none;
+
+  color: white;
+  font-size: 25px;
+}
+.footer-summary h1 span {
+  color: hsl(218, 80%, 50%);
+}
+.footer-summary p {
+  line-height: 1.5;
+}
+
+.footer-summary p {
+  /* color: white; */
+  font-size: 14px;
+  line-height: 1.3;
+}
+.footer-input {
+  color: white;
+  width: 350px;
+}
+.footer-input h1 {
+  color: white;
+}
+.footer-input input {
+  outline: none;
+  width: 60%;
+  padding: 5px 10px;
+}
+.footer-input button {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: hsl(218, 80%, 50%);
+  color: white;
+  border: 2px solid hsl(218, 80%, 50%);
+  transition: 0.5s;
+}
+.footer-input button:hover {
+  background-color: hsla(218, 80%, 50%, 0.7);
+  border: 2px solid hsla(218, 80%, 50%, 0.7);
+}
+.footer-input p {
+  margin: 10px 0;
+  line-height: 1.3;
+}
+.footer-contact {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.footer-contact .member-icons {
+  justify-content: flex-start;
+  gap: 25px;
+}
+
+@media (max-width: 1100px) {
+  .footer-section {
+    width: 80%;
+  }
+}
+@media (max-width: 700px) {
+  .footer-section {
+    width: 80%;
+  }
+}

@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comtech</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <section class="header">
+      <nav>
+        <h1>
+          <a href=""><span>Com</span>Tech</a>
+        </h1>
+        <svg
+          onclick="displayMenu()"
+          class="menu"
+          xmlns="http://www.w3.org/2000/svg"
+          width="512"
+          height="512"
+          viewBox="0 0 512 512"
+        >
+          <title>ionicons-v5-j</title>
+          <line
+            x1="80"
+            y1="160"
+            x2="432"
+            y2="160"
+            style="
+              fill: none;
+              stroke: rgb(255, 255, 255);
+              stroke-linecap: round;
+              stroke-miterlimit: 10;
+              stroke-width: 32px;
+            "
+          />
+          <line
+            x1="80"
+            y1="256"
+            x2="432"
+            y2="256"
+            style="
+              fill: none;
+              stroke: rgb(255, 255, 255);
+              stroke-linecap: round;
+              stroke-miterlimit: 10;
+              stroke-width: 32px;
+            "
+          />
+          <line
+            x1="80"
+            y1="352"
+            x2="432"
+            y2="352"
+            style="
+              fill: none;
+              stroke: rgb(255, 255, 255);
+              stroke-linecap: round;
+              stroke-miterlimit: 10;
+              stroke-width: 32px;
+            "
+          />
+        </svg>
+        <div class="nav-links" id="nav-links">
+          <ul>
+            <li>
+              <svg
+                onclick="hideMenu()"
+                class="close"
+                xmlns="http://www.w3.org/2000/svg"
+                width="512"
+                height="512"
+                viewBox="0 0 512 512"
+              >
+                <title>ionicons-v5-l</title>
+                <line
+                  x1="368"
+                  y1="368"
+                  x2="144"
+                  y2="144"
+                  style="
+                    fill: none;
+                    stroke: rgb(255, 255, 255);
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 32px;
+                  "
+                />
+                <line
+                  x1="368"
+                  y1="144"
+                  x2="144"
+                  y2="368"
+                  style="
+                    fill: none;
+                    stroke: rgb(255, 255, 255);
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 32px;
+                  "
+                />
+              </svg>
+            </li>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li><a href="">TEAM</a></li>
+            <li><a href="">REVIEWS</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="text-box">
+        <h2>COMTECH COMPUTER</h2>
+        <h1>Repair & Servicing</h1>
+        <p>
+          Fusce nec massa elementum, iaculis neque ut, finibus nisl. Quisque in
+          lacus elementum, gravida leo vitae, condimentum metus. Quisque
+          dignissim nibh nec maximus varius.
+        </p>
+        <div class="hero-btns">
+          <a class="hero-btn" href="">LEARN MORE</a>
+          <a class="hero-btn-transparent" href="">SERVICES</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about-container container">
+        <div class="about-section section">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="512"
+            height="512"
+            viewBox="0 0 512 512"
+          >
+            <path d="M480,265H232V444l248,36V265Z" />
+            <path d="M216,265H32V415l184,26.7V265Z" />
+            <path d="M480,32,232,67.4V249H480V32Z" />
+            <path d="M216,69.7,32,96V249H216V69.7Z" />
+          </svg>
+          <h2>OS Installation</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+            eligendi laboriosam reprehenderit cum delectus enim fugiat, soluta
+            voluptate recusandae possimus.
+          </p>
+        </div>
+        <div class="about-section section">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="512"
+            height="512"
+            viewBox="0 0 512 512"
+          >
+            <title>ionicons-v5-l</title>
+            <rect
+              x="80"
+              y="80"
+              width="352"
+              height="352"
+              rx="48"
+              ry="48"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <rect
+              x="144"
+              y="144"
+              width="224"
+              height="224"
+              rx="16"
+              ry="16"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <line
+              x1="256"
+              y1="80"
+              x2="256"
+              y2="48"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <line
+              x1="336"
+              y1="80"
+              x2="336"
+              y2="48"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <line
+              x1="176"
+              y1="80"
+              x2="176"
+              y2="48"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <line
+              x1="256"
+              y1="464"
+              x2="256"
+              y2="432"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <line
+              x1="336"
+              y1="464"
+              x2="336"
+              y2="432"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <line
+              x1="176"
+              y1="464"
+              x2="176"
+              y2="432"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <line
+              x1="432"
+              y1="256"
+              x2="464"
+              y2="256"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <line
+              x1="432"
+              y1="336"
+              x2="464"
+              y2="336"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <line
+              x1="432"
+              y1="176"
+              x2="464"
+              y2="176"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <line
+              x1="48"
+              y1="256"
+              x2="80"
+              y2="256"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <line
+              x1="48"
+              y1="336"
+              x2="80"
+              y2="336"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <line
+              x1="48"
+              y1="176"
+              x2="80"
+              y2="176"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+          </svg>
+          <h2>Hardware Repair</h2>
+          <p>
+            Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Nam metus tellus, interdum a interdum ac,
+            venenatis ut sem.
+          </p>
+        </div>
+        <div class="about-section section">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="512"
+            height="512"
+            viewBox="0 0 512 512"
+          >
+            <title>ionicons-v5-s</title>
+            <polyline
+              points="336 176 225.2 304 176 255.8"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <path
+              d="M463.1,112.37C373.68,96.33,336.71,84.45,256,48,175.29,84.45,138.32,96.33,48.9,112.37,32.7,369.13,240.58,457.79,256,464,271.42,457.79,479.3,369.13,463.1,112.37Z"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+          </svg>
+          <h2>90 Days Warranty</h2>
+          <p>
+            Sed sed consectetur eros, eget sodales velit. Nunc sit amet mattis
+            lectus. Sed quam urna, blandit eget euismod vel, aliquet sed mi.
+          </p>
+        </div>
+      </div>
+      <div class="about-us">
+        <div class="about-us-image">
+          <img src="images/computer engineering.jfif" alt="" />
+        </div>
+        <div class="about-us-info">
+          <h3>THE COMTECH</h3>
+          <h1>About Us</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum magni
+            et explicabo iusto nam optio aliquam. Numquam ad perspiciatis
+            sapiente.
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Nam tristique dolor at consectetur rhoncus.</li>
+            <li>Nam tristique dolor at consectetur rhoncus.</li>
+          </ul>
+          <a class="hero-btn" href="">LEARN MORE</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <h3>WHAT YOU GET FROM US</h3>
+      <h1>Our Services</h1>
+      <div class="services-container container">
+        <div class="services-section section">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="512"
+            height="512"
+            viewBox="0 0 512 512"
+          >
+            <title>ionicons-v5-h</title>
+            <rect
+              x="32"
+              y="64"
+              width="448"
+              height="320"
+              rx="32"
+              ry="32"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <polygon
+              points="304 448 296 384 216 384 208 448 304 448"
+              style="
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <line
+              x1="368"
+              y1="448"
+              x2="144"
+              y2="448"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <path
+              d="M32,304v48a32.09,32.09,0,0,0,32,32H448a32.09,32.09,0,0,0,32-32V304Zm224,64a16,16,0,1,1,16-16A16,16,0,0,1,256,368Z"
+            />
+          </svg>
+          <h2>Desktop Computer</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quod
+            ipsam blanditiis delectus cupiditate illo debitis aspernatur magnam
+            pariatur nemo.
+          </p>
+        </div>
+        <div class="services-section section">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="512"
+            height="512"
+            viewBox="0 0 512 512"
+          >
+            <title>ionicons-v5-n</title>
+            <rect
+              x="48"
+              y="96"
+              width="416"
+              height="304"
+              rx="32.14"
+              ry="32.14"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <line
+              x1="16"
+              y1="416"
+              x2="496"
+              y2="416"
+              style="
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-miterlimit: 10;
+                stroke-width: 32px;
+              "
+            />
+          </svg>
+          <h2>Laptop Computer</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quod
+            ipsam blanditiis delectus cupiditate illo debitis aspernatur magnam
+            pariatur nemo.
+          </p>
+        </div>
+        <div class="services-section section">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="512"
+            height="512"
+            viewBox="0 0 512 512"
+          >
+            <title>ionicons-v5-h</title>
+            <rect
+              x="32"
+              y="64"
+              width="448"
+              height="320"
+              rx="32"
+              ry="32"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <polygon
+              points="304 448 296 384 216 384 208 448 304 448"
+              style="
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <line
+              x1="368"
+              y1="448"
+              x2="144"
+              y2="448"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <path
+              d="M32,304v48a32.09,32.09,0,0,0,32,32H448a32.09,32.09,0,0,0,32-32V304Zm224,64a16,16,0,1,1,16-16A16,16,0,0,1,256,368Z"
+            />
+          </svg>
+          <h2>All in One Computer</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quod
+            ipsam blanditiis delectus cupiditate illo debitis aspernatur magnam
+            pariatur nemo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="team">
+      <h3>EXPERIENCED MEMBERS</h3>
+      <h1>Meet Our Team</h1>
+      <div class="our-team">
+        <div class="member">
+          <img src="images/member1.jpeg" alt="" />
+          <h3>Senior Engineer</h3>
+          <p>Natasha Jacobs</p>
+          <div class="member-icons">
+            <a href="">
+              <svg
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M480,257.35c0-123.7-100.3-224-224-224s-224,100.3-224,224c0,111.8,81.9,204.47,189,221.29V322.12H164.11V257.35H221V208c0-56.13,33.45-87.16,84.61-87.16,24.51,0,50.15,4.38,50.15,4.38v55.13H327.5c-27.81,0-36.51,17.26-36.51,35v42h62.12l-9.92,64.77H291V478.66C398.1,461.85,480,369.18,480,257.35Z"
+                  fill-rule="evenodd"
+                /></svg
+            ></a>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="512"
+                height="512"
+                viewBox="0 0 512 512"
+              >
+                <title>ionicons-v5_logos</title>
+                <path
+                  d="M349.33,69.33a93.62,93.62,0,0,1,93.34,93.34V349.33a93.62,93.62,0,0,1-93.34,93.34H162.67a93.62,93.62,0,0,1-93.34-93.34V162.67a93.62,93.62,0,0,1,93.34-93.34H349.33m0-37.33H162.67C90.8,32,32,90.8,32,162.67V349.33C32,421.2,90.8,480,162.67,480H349.33C421.2,480,480,421.2,480,349.33V162.67C480,90.8,421.2,32,349.33,32Z"
+                />
+                <path
+                  d="M377.33,162.67a28,28,0,1,1,28-28A27.94,27.94,0,0,1,377.33,162.67Z"
+                />
+                <path
+                  d="M256,181.33A74.67,74.67,0,1,1,181.33,256,74.75,74.75,0,0,1,256,181.33M256,144A112,112,0,1,0,368,256,112,112,0,0,0,256,144Z"
+                />
+              </svg>
+            </a>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="512"
+                height="512"
+                viewBox="0 0 512 512"
+              >
+                <title>ionicons-v5_logos</title>
+                <path
+                  d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"
+                />
+              </svg>
+            </a>
+            <a href="">
+              <svg
+                id="icons"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M412.19,118.66a109.27,109.27,0,0,1-9.45-5.5,132.87,132.87,0,0,1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14,23.9,350,16,350.13,16H267.69V334.78c0,4.28,0,8.51-.18,12.69,0,.52-.05,1-.08,1.56,0,.23,0,.47-.05.71,0,.06,0,.12,0,.18a70,70,0,0,1-35.22,55.56,68.8,68.8,0,0,1-34.11,9c-38.41,0-69.54-31.32-69.54-70s31.13-70,69.54-70a68.9,68.9,0,0,1,21.41,3.39l.1-83.94a153.14,153.14,0,0,0-118,34.52,161.79,161.79,0,0,0-35.3,43.53c-3.48,6-16.61,30.11-18.2,69.24-1,22.21,5.67,45.22,8.85,54.73v.2c2,5.6,9.75,24.71,22.38,40.82A167.53,167.53,0,0,0,115,470.66v-.2l.2.2C155.11,497.78,199.36,496,199.36,496c7.66-.31,33.32,0,62.46-13.81,32.32-15.31,50.72-38.12,50.72-38.12a158.46,158.46,0,0,0,27.64-45.93c7.46-19.61,9.95-43.13,9.95-52.53V176.49c1,.6,14.32,9.41,14.32,9.41s19.19,12.3,49.13,20.31c21.48,5.7,50.42,6.9,50.42,6.9V131.27C453.86,132.37,433.27,129.17,412.19,118.66Z"
+                /></svg
+            ></a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/member2.jpeg" alt="" />
+          <h3>service Manager</h3>
+          <p>Johan Smith</p>
+          <div class="member-icons">
+            <a href="">
+              <svg
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M480,257.35c0-123.7-100.3-224-224-224s-224,100.3-224,224c0,111.8,81.9,204.47,189,221.29V322.12H164.11V257.35H221V208c0-56.13,33.45-87.16,84.61-87.16,24.51,0,50.15,4.38,50.15,4.38v55.13H327.5c-27.81,0-36.51,17.26-36.51,35v42h62.12l-9.92,64.77H291V478.66C398.1,461.85,480,369.18,480,257.35Z"
+                  fill-rule="evenodd"
+                /></svg
+            ></a>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="512"
+                height="512"
+                viewBox="0 0 512 512"
+              >
+                <title>ionicons-v5_logos</title>
+                <path
+                  d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z"
+                />
+              </svg>
+            </a>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="512"
+                height="512"
+                viewBox="0 0 512 512"
+              >
+                <title>ionicons-v5_logos</title>
+                <path
+                  d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"
+                />
+              </svg>
+            </a>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="512"
+                height="512"
+                viewBox="0 0 512 512"
+              >
+                <title>ionicons-v5_logos</title>
+                <path
+                  d="M473.16,221.48l-2.26-9.59H262.46v88.22H387c-12.93,61.4-72.93,93.72-121.94,93.72-35.66,0-73.25-15-98.13-39.11a140.08,140.08,0,0,1-41.8-98.88c0-37.16,16.7-74.33,41-98.78s61-38.13,97.49-38.13c41.79,0,71.74,22.19,82.94,32.31l62.69-62.36C390.86,72.72,340.34,32,261.6,32h0c-60.75,0-119,23.27-161.58,65.71C58,139.5,36.25,199.93,36.25,256S56.83,369.48,97.55,411.6C141.06,456.52,202.68,480,266.13,480c57.73,0,112.45-22.62,151.45-63.66,38.34-40.4,58.17-96.3,58.17-154.9C475.75,236.77,473.27,222.12,473.16,221.48Z"
+                /></svg
+            ></a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/member3.jpeg" alt="" />
+          <h3>Hardware Engineer</h3>
+          <p>Zoey Tarasov</p>
+          <div class="member-icons">
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="512"
+                height="512"
+                viewBox="0 0 512 512"
+              >
+                <title>ionicons-v5_logos</title>
+                <path
+                  d="M349.33,69.33a93.62,93.62,0,0,1,93.34,93.34V349.33a93.62,93.62,0,0,1-93.34,93.34H162.67a93.62,93.62,0,0,1-93.34-93.34V162.67a93.62,93.62,0,0,1,93.34-93.34H349.33m0-37.33H162.67C90.8,32,32,90.8,32,162.67V349.33C32,421.2,90.8,480,162.67,480H349.33C421.2,480,480,421.2,480,349.33V162.67C480,90.8,421.2,32,349.33,32Z"
+                />
+                <path
+                  d="M377.33,162.67a28,28,0,1,1,28-28A27.94,27.94,0,0,1,377.33,162.67Z"
+                />
+                <path
+                  d="M256,181.33A74.67,74.67,0,1,1,181.33,256,74.75,74.75,0,0,1,256,181.33M256,144A112,112,0,1,0,368,256,112,112,0,0,0,256,144Z"
+                /></svg
+            ></a>
+
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="512"
+                height="512"
+                viewBox="0 0 512 512"
+              >
+                <title>ionicons-v5_logos</title>
+                <path
+                  d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"
+                />
+              </svg>
+            </a>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="512"
+                height="512"
+                viewBox="0 0 512 512"
+              >
+                <title>ionicons-v5-o</title>
+                <path
+                  d="M424,80H88a56.06,56.06,0,0,0-56,56V376a56.06,56.06,0,0,0,56,56H424a56.06,56.06,0,0,0,56-56V136A56.06,56.06,0,0,0,424,80Zm-14.18,92.63-144,112a16,16,0,0,1-19.64,0l-144-112a16,16,0,1,1,19.64-25.26L256,251.73,390.18,147.37a16,16,0,0,1,19.64,25.26Z"
+                /></svg
+            ></a>
+          </div>
+        </div>
+        <div class="member">
+          <img src="images/member4.jpeg" alt="" />
+          <h3>Software Engineer</h3>
+          <p>Dylan Bishops</p>
+          <div class="member-icons">
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="512"
+                height="512"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M256.05,32c-123.7,0-224,100.3-224,224,0,91.7,55.2,170.5,134.1,205.2-.6-15.6-.1-34.4,3.9-51.4,4.3-18.2,28.8-122.1,28.8-122.1s-7.2-14.3-7.2-35.4c0-33.2,19.2-58,43.2-58,20.4,0,30.2,15.3,30.2,33.6,0,20.5-13.1,51.1-19.8,79.5-5.6,23.8,11.9,43.1,35.4,43.1,42.4,0,71-54.5,71-119.1,0-49.1-33.1-85.8-93.2-85.8-67.9,0-110.3,50.7-110.3,107.3,0,19.5,5.8,33.3,14.8,43.9,4.1,4.9,4.7,6.9,3.2,12.5-1.1,4.1-3.5,14-4.6,18-1.5,5.7-6.1,7.7-11.2,5.6-31.3-12.8-45.9-47-45.9-85.6,0-63.6,53.7-139.9,160.1-139.9,85.5,0,141.8,61.9,141.8,128.3,0,87.9-48.9,153.5-120.9,153.5-24.2,0-46.9-13.1-54.7-27.9,0,0-13,51.6-15.8,61.6-4.7,17.3-14,34.5-22.5,48a225.13,225.13,0,0,0,63.5,9.2c123.7,0,224-100.3,224-224S379.75,32,256.05,32Z"
+                />
+              </svg>
+            </a>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="512"
+                height="512"
+                viewBox="0 0 512 512"
+              >
+                <title>ionicons-v5_logos</title>
+                <path
+                  d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"
+                />
+              </svg>
+            </a>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="512"
+                height="512"
+                viewBox="0 0 512 512"
+              >
+                <title>ionicons-v5_logos</title>
+                <path
+                  d="M349.33,69.33a93.62,93.62,0,0,1,93.34,93.34V349.33a93.62,93.62,0,0,1-93.34,93.34H162.67a93.62,93.62,0,0,1-93.34-93.34V162.67a93.62,93.62,0,0,1,93.34-93.34H349.33m0-37.33H162.67C90.8,32,32,90.8,32,162.67V349.33C32,421.2,90.8,480,162.67,480H349.33C421.2,480,480,421.2,480,349.33V162.67C480,90.8,421.2,32,349.33,32Z"
+                />
+                <path
+                  d="M377.33,162.67a28,28,0,1,1,28-28A27.94,27.94,0,0,1,377.33,162.67Z"
+                />
+                <path
+                  d="M256,181.33A74.67,74.67,0,1,1,181.33,256,74.75,74.75,0,0,1,256,181.33M256,144A112,112,0,1,0,368,256,112,112,0,0,0,256,144Z"
+                /></svg
+            ></a>
+          </div>
+        </div>
+      </div>
+      <button class="btn">View All</button>
+    </section>
+
+    <section class="reviews">
+      <h3>Our Reviews</h3>
+      <section class="review-container">
+        <article class="review">
+          <div class="image-container">
+            <img src="images/review1.jpeg" id="person-img" />
+          </div>
+          <h4 id="author">Sara Jones</h4>
+          <p id="info">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
+            harum necessitatibus doloremque quas. Unde cum reiciendis ducimus
+            doloremque vitae dicta?
+          </p>
+          <div class="button-containers">
+            <button class="prev-btn"><</button>
+            <button class="next-btn">></button>
+          </div>
+          <button class="random-btn">Random</button>
+        </article>
+      </section>
+    </section>
+
+    <section class="blog">
+      <h3>READ OUR LATEST BLOG</h3>
+      <h1>Our Blog</h1>
+      <div class="blogs container">
+        <div class="blog-item">
+          <img src="images/blog2.jpeg" alt="" />
+          <div class="blog-item-info">
+            <p>Computer Virus</p>
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic enim
+              voluptates cumque quasi! Harum ratione molestiae facilis unde, a
+              consequuntur.
+            </p>
+            <button class="hero-btn">Read More</button>
+          </div>
+        </div>
+        <div class="blog-item">
+          <img src="images/blog.jpeg" alt="" />
+          <div class="blog-item-info">
+            <p>Computer Virus</p>
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic enim
+              voluptates cumque quasi! Harum ratione molestiae facilis unde, a
+              consequuntur.
+            </p>
+            <button class="hero-btn">Read More</button>
+          </div>
+        </div>
+        <div class="blog-item">
+          <img src="images/26269d7bb0c47fdf8d2912cdafd2abfb.jpg" alt="" />
+          <div class="blog-item-info">
+            <p>Computer Virus</p>
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic enim
+              voluptates cumque quasi! Harum ratione molestiae facilis unde, a
+              consequuntur.
+            </p>
+            <button class="hero-btn">Read More</button>
+          </div>
+        </div>
+      </div>
+      <button class="blog-btn">View All</button>
+    </section>
+
+    <section class="footer">
+      <div class="footer-section footer-summary">
+        <h1>
+          <a href=""><span>Com</span>Tech</a>
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos animi
+          dolor iste deserunt? Maiores, aperiam quidem.
+        </p>
+      </div>
+      <div class="footer-section footer-input">
+        <h1>UPDATE NEWS</h1>
+        <input type="text" placeholder="Email Adress" /><button>
+          Subscribe
+        </button>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing. Lorem ipsum dolor
+          sit amet.
+        </p>
+      </div>
+      <div class="footer-section footer-contact">
+        <h1>CONTACT INFO</h1>
+        <p>75th floor, ABC Building, 54th Avenue, Indiana Monday</p>
+        <p>info@comtech.com</p>
+        <p>Friday, 8:45am - 5:30pm</p>
+        <p>+222 090 3433 32</p>
+        <div class="member-icons">
+          <a href="">
+            <svg
+              id="Layer_1"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M480,257.35c0-123.7-100.3-224-224-224s-224,100.3-224,224c0,111.8,81.9,204.47,189,221.29V322.12H164.11V257.35H221V208c0-56.13,33.45-87.16,84.61-87.16,24.51,0,50.15,4.38,50.15,4.38v55.13H327.5c-27.81,0-36.51,17.26-36.51,35v42h62.12l-9.92,64.77H291V478.66C398.1,461.85,480,369.18,480,257.35Z"
+                fill-rule="evenodd"
+              /></svg
+          ></a>
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="512"
+              height="512"
+              viewBox="0 0 512 512"
+            >
+              <title>ionicons-v5_logos</title>
+              <path
+                d="M349.33,69.33a93.62,93.62,0,0,1,93.34,93.34V349.33a93.62,93.62,0,0,1-93.34,93.34H162.67a93.62,93.62,0,0,1-93.34-93.34V162.67a93.62,93.62,0,0,1,93.34-93.34H349.33m0-37.33H162.67C90.8,32,32,90.8,32,162.67V349.33C32,421.2,90.8,480,162.67,480H349.33C421.2,480,480,421.2,480,349.33V162.67C480,90.8,421.2,32,349.33,32Z"
+              />
+              <path
+                d="M377.33,162.67a28,28,0,1,1,28-28A27.94,27.94,0,0,1,377.33,162.67Z"
+              />
+              <path
+                d="M256,181.33A74.67,74.67,0,1,1,181.33,256,74.75,74.75,0,0,1,256,181.33M256,144A112,112,0,1,0,368,256,112,112,0,0,0,256,144Z"
+              />
+            </svg>
+          </a>
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="512"
+              height="512"
+              viewBox="0 0 512 512"
+            >
+              <title>ionicons-v5_logos</title>
+              <path
+                d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"
+              />
+            </svg>
+          </a>
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="512"
+              height="512"
+              viewBox="0 0 512 512"
+            >
+              <title>ionicons-v5_logos</title>
+              <path
+                d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z"
+              /></svg
+          ></a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
